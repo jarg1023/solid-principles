@@ -1,14 +1,10 @@
-## Getting Started
+## Composition vs inheritance
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This exercises is to practice composition over inheritance. This one has been done in Java ☕️.
 
-## Folder Structure
+Exercise is based on this [kata](https://github.com/Codesai/practice_program/tree/master/katas_java/05-refactoring-awful-inheritance-use-with-beverage-prices-kata).
 
-The workspace contains two folders by default, where:
+- There is a '_wrong_' directory where code is inherited (default kata code) ❌ 
+- There is a '_correct_' directory where code uses composition over inheritance ✅
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+In this case, there are some tests too with JUnit 🧪.
