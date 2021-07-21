@@ -1,6 +1,6 @@
 <?php
 
-// ! This class violates the Liskov Substitution Principle because it changes de default behaviour of these methods
+// ! This class violates the Liskov Substitution Principle because it changes the default behaviour of these methods
 
 class Parrot extends Bird
 {
