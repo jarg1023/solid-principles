@@ -1,14 +1,6 @@
-## Getting Started
+## Interface Segregation Principle (ISP)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This exercises is to practice ISP. This one has been done in Java ☕️.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- There is a '_wrong_' directory where code does not respect the ISP ❌
+- There is a '_correct_' directory where code does respect the ISP explanations inside of some classes ✅
