@@ -8,7 +8,6 @@ import correct.beverages.Beverage;
 import correct.beverages.Coffee;
 import correct.beverages.CoffeeWithMilk;
 import correct.beverages.CoffeeWithMilkAndCream;
-import correct.beverages.Cream;
 import correct.beverages.HotChocolate;
 import correct.beverages.HotChocolateWithCream;
 import correct.beverages.Milk;
@@ -17,6 +16,7 @@ import correct.beverages.TeaWithCinnamon;
 import correct.beverages.TeaWithMilk;
 import correct.supplements.BeverageSupplement;
 import correct.supplements.CinnamonSupplement;
+import correct.supplements.Cream;
 
 public class BeveragesTest {
 
@@ -39,19 +39,19 @@ public class BeveragesTest {
     @Test
     public void coffeeWithMilkAndCreamPrice() {
         Beverage coffee = new Coffee();
-        Beverage cream = new Cream();
         Beverage milk = new Milk();
+        BeverageSupplement cream = new Cream();
         
-        Beverage coffeeWithMilkAndCream = new CoffeeWithMilkAndCream(coffee, cream, milk);
+        Beverage coffeeWithMilkAndCream = new CoffeeWithMilkAndCream(coffee, milk, cream);
         assertEquals(1.45, coffeeWithMilkAndCream.price());
     }
 
     @Test
     public void HotChocolateWithCreamPrice() {
-        Beverage cream = new Cream();
+        BeverageSupplement cream = new Cream();
         Beverage hotChocolate = new HotChocolate();
 
-        Beverage hotChocolateWithCream = new HotChocolateWithCream(cream, hotChocolate);
+        Beverage hotChocolateWithCream = new HotChocolateWithCream(hotChocolate, cream);
         assertEquals(1.5999999999999999, hotChocolateWithCream.price());
     }
 
